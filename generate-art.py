@@ -37,13 +37,14 @@ def create_invader(border, draw, size):
                 incrementer *= -1
             element += incrementer
 
-def generate_art(size):
+def generate_art(size, path: str):
     print("Generating Art!")
     image = Image.new("RGB", (128, 128))
     draw = ImageDraw.Draw(image)
 
     create_invader((99,99,102,0), draw, size)
-    image.save("test_image.png")
+    image.save(path)
 
 if __name__ == "__main__":
-    generate_art(7)
+    for i in range(10):
+        generate_art(7, f"test_image_{i}.png")
