@@ -47,4 +47,4 @@ def generate_art(size, path: str):
 
 if __name__ == "__main__":
     for i in range(10):
-        generate_art(7, f"test_image_{i}.png")
+        generate_art(7, f"invaders/invader_{i}.png")
