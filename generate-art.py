@@ -18,7 +18,7 @@ def create_invader(border, draw, size):
     x0, y0, x1, y1 = border
     square_size = (x0-x1) - size
     
-    # 3 random colours for the sprite
+    # 3 random colours for the sprite 
     random_colors = [rc(), rc(), rc(), (0,0,0), (0,0,0), (0,0,0)]
     incrementer = 1
     element = 0
@@ -41,9 +41,8 @@ def generate_art(size):
     print("Generating Art!")
     image = Image.new("RGB", (128, 128))
     draw = ImageDraw.Draw(image)
-            
-    create_invader((99,99,102,0), draw, size)
 
+    create_invader((99,99,102,0), draw, size)
     image.save("test_image.png")
 
 if __name__ == "__main__":
